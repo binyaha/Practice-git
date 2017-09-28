@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 .container {
- 
   width: 800px;
   margin: 0 auto;
 }
@@ -65,7 +64,7 @@ li:hover a{
   margin-right: 20px;
 }
 #my-avatar img {
-  width:180px;
+  width:200px;
 }
 
 h1 {
@@ -99,6 +98,14 @@ hr {
   margin-bottom: 10px;
 }
 .item img {
+  width: 100%;
+}
+
+#c1 {
+  max-width: 30%;
+}
+
+#c1 img {
   width: 100%;
 }
 
@@ -159,4 +166,75 @@ hr.bar {
 }
 #my-work-gallery {
     text-align: center;
+ 
 }
+@media screen and (max-width: 1023px) {
+
+ .container {
+    width: auto;
+  }
+    .menu {
+    margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 150px;
+    height: 100%;
+    background: red;
+    display: none;
+
+  }
+ .menu-button {
+    float: right;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    background: transparent;
+    padding: 0 15px;
+    border: 0;
+  }
+   .menu li {
+    border: 0;
+    border-radius: 0;
+  }
+    .menu-button-checkbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 40px;
+    opacity: 0;
+  }
+  .menu-button-checkbox:checked ~ .menu {
+    display: block;
+  }
+  #my-avatar {
+  width: 100%; 
+}
+
+
+#my-avatar img {
+  display: block;
+  margin: 15px auto;
+}
+.item {
+    max-width: 100%;
+  }
+ form.contact-form {
+    width: 80%;
+    
+  }
+  } 
+
+
+@media screen and (min-width: 1024px) {
+  .menu-button {
+    display: none;
+    background-color: red;
+  }
+  .menu-button-checkbox {
+    display: none;
+  }
+}
+
